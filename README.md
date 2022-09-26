@@ -19,5 +19,5 @@ Lancer le script :
     
 ## Authors
 
-- [@MikaelJG](https://github.com/MikaelJG)
 - [@julienLeMee](https://github.com/julienLeMee)
+- [@MikaelJG](https://github.com/MikaelJG)
