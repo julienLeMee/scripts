@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "------------------ INITIALISATION D'UN NOUVEAU PROJET ------------------"
+
 ################### SCRIPT POUR LANCER UN PROJET SIMPLE ###################
 
 #================== avoir le droit d'éxécuter le script : ==================#
@@ -17,7 +19,12 @@ cd $NOM_DU_PROJET
 # créer le fichier index.html, style.css et script.js
 touch index.html style.css script.js
 
-# écrire le squeltte de base du html et lier le css et le javascript
+# écrire le squelette de base du html et lier le css et le javascript
+echo "------------------ CREATION DU SQUELETTE DE BASE HTML ------------------"
+
+echo "------------------ LIER LE FICHIER CSS ------------------"
+echo "------------------ LIER LE FICHIER JAVASCRIPT ------------------"
+
 echo '<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,5 +41,7 @@ echo '<!DOCTYPE html>
 <script src="script.js"></script>
 </body>
 </html>' > index.html
+
+echo "------------------ PROJET CREER AVEC SUCCES ------------------"
 
 code .

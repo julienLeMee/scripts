@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "------------------ INITIALISATION D'UN NOUVEAU PROJET REACT------------------"
+
 ################### SCRIPT POUR NOUVEAU PROJET REACT ###################
 
 #================== avoir le droit d'éxécuter le script : ==================#
@@ -16,11 +18,17 @@ npm create vite@latest
 # se placer dans le dossier du projet
 cd $NOM_DU_PROJET
 
+echo "------------------ CREATION DU DOSSIER COMPONENTS ------------------"
+
 # créer le dossier components
 mkdir components
 
+echo "------------------ CREATION DES COMPONENTS ------------------"
+
 # créer les fichiers de components de bases
 touch ./components/Navbar.jsx ./components/Content.jsx ./components/Footer.jsx
+
+echo "------------------ IMPORTATIONS DES COMPONENTS ------------------"
 
 # link les components dans index.js
 echo "import Navbar from './components/Navbar'
@@ -39,6 +47,8 @@ export default function App() {
 }" > ./src/App.jsx
 
 npm install
+
+echo "------------------ PROJET CREER AVEC SUCCES ------------------"
 
 code .
 
