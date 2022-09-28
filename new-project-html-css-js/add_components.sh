@@ -13,17 +13,6 @@ Footer?
     >" yn
         case $yn in
                 [Yy]* )
-                  chmod +x ../add_components.sh;
-                  ../add_components.sh; break;;
-
-                [Nn]* )
-                  chmod +x ./barebones.sh;
-                  ../barebones.sh; exit;;
-
-                * ) echo "Please answer yes or no.";;
-        esac
-done
-
 echo "------------------ CREATION DU SQUELETTE DE BASE HTML ------------------"
 
 echo "------------------ LIER LE FICHIER CSS ------------------"
@@ -103,10 +92,6 @@ echo '<!DOCTYPE html>
 </body>
 </html>' > index.html
 
-
-
-echo "------------------ PROJET CREER AVEC SUCCES ------------------"
-
 echo "
 .navbar-lewagon {
   justify-content: space-between;
@@ -162,6 +147,19 @@ echo "
 .footer .fa-heart {
   color: #D23333;
 }
-" > style.css
+" > style.css; break;;
+
+                [Nn]* )
+                  chmod +x ./barebones.sh;
+                  ../barebones.sh; exit;;
+
+                * ) echo "Please answer yes or no.";;
+        esac
+done
+
+
+
+
+echo "------------------ PROJET CREER AVEC SUCCES ------------------"
 
 code .
