@@ -32,13 +32,12 @@ Would you like components?
     >" yn
         case $yn in
                 [Yy]* )
-                  chmod +x ./add_components.sh
-                  ./add_components.sh
-                ; break;;
+                  chmod +x ../add_components.sh;
+                  ../add_components.sh; break;;
 
                 [Nn]* )
-                  chmod +x ./barebones.sh
-                  ./barebones.sh; exit;;
+                  chmod +x ../barebones.sh;
+                  ../barebones.sh; exit;;
 
                 * ) echo "Please answer yes or no.";;
         esac
