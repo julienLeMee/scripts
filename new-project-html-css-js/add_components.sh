@@ -73,6 +73,28 @@ echo '<!DOCTYPE html>
       </div>
     </div>
   </div>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  Breakfast
+  </div>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  Breakfast
+  </div>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+  Breakfast
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="footer-copyright">
+      This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+    </div>
+  </div>
 
 
 
@@ -81,6 +103,8 @@ echo '<!DOCTYPE html>
 <script src="script.js"></script>
 </body>
 </html>' > index.html
+
+
 
 echo "------------------ PROJET CREER AVEC SUCCES ------------------"
 
@@ -96,6 +120,48 @@ echo "
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
 }
 " > style.css
 
