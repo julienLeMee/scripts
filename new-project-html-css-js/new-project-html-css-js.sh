@@ -19,29 +19,28 @@ cd $NOM_DU_PROJET
 # créer le fichier index.html, style.css et script.js
 touch index.html style.css script.js
 
+while true; do
+    read -p "
+##############################
+##############################
+
+Would you like components?
+
+##############################
+##############################
+
+    >" yn
+        case $yn in
+                [Yy]* )
+                  chmod +x ../add_components.sh;
+                  ../add_components.sh; break;;
+
+                [Nn]* )
+                  chmod +x ../barebones.sh;
+                  ../barebones.sh; exit;;
+
+                * ) echo "Please answer yes or no.";;
+        esac
+done
+
 # écrire le squelette de base du html et lier le css et le javascript
-echo "------------------ CREATION DU SQUELETTE DE BASE HTML ------------------"
-
-echo "------------------ LIER LE FICHIER CSS ------------------"
-echo "------------------ LIER LE FICHIER JAVASCRIPT ------------------"
-
-echo '<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-</head>
-<body>
-
-  <h1>Hello</h1>
-
-<script src="script.js"></script>
-</body>
-</html>' > index.html
-
-echo "------------------ PROJET CREER AVEC SUCCES ------------------"
-
-code .
