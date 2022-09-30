@@ -84,8 +84,6 @@ echo '<!DOCTYPE html>
     </div>
   </div>
 
-
-
   <h1>Hello</h1>
 
 <script src="script.js"></script>
